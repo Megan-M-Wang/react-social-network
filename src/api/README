@@ -11,16 +11,16 @@ String:
     Perform Reg Exp expression on url to combine with name and call decodeURLComponent on the result
   
 Post:
-  detectTags( content: string, character: string) => string[] = (content: string, character: string):
+  detectTags( content: string, character: string ):
     Get tags from post content -- character is the tag delimiter (#)
   
-  getContentTags( content: string):
+  getContentTags( content: string ):
     Returns a list of tags without the # before the tags
   
   sortObjectDate( object: any ):
     Sort the objects by the creation data 
   
-  sortImuObjectDate( objects: List<Map<string, any>>):
+  sortImuObjectDate( objects: List<Map<string, any>> ):
     Same as above sorts objects by creation date
   
 File:
@@ -30,10 +30,24 @@ File:
   convertImageToCanvas( image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap ):
     Return canvas the same dimensions of the image containing the image
   
-  constraintImage( file: File, fileName: string, maxWidth?: number, maxHeight?: number):
+  constraintImage( file: File, fileName: string, maxWidth?: number, maxHeight?: number ):
     Reads in an image from an image file and constrains it to the width and height 
 
-  dataURLtoBlob( dataURL: string) -- Converts data at URL to blob type
+  dataURLtoBlob( dataURL: string ):
+    Converts data at URL to blob type
   
 Common:
+  logger ( title: string, ...data: any[] ):
+    Logs data under title and current time
+    
+   getRandomColor ():
+     Returns a random color in hex
+     
+   updateObject ( oldObject: any, updatedProperties: any ):
+    Updates specified object with the specified properties
+    
+   getStateSlice ( state: any ):
+    Converts local state to a JavaScript structure
+   
+   
   
