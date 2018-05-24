@@ -1,24 +1,33 @@
 Contains API information for Comment, Common, File, Post, and String 
 
 String:
-  isValidEmail( email: string ) -- returns if the string is a valid email address
+  isValidEmail( email: string ):
+    Returns if the string is a valid email address
   
-  createServerRequestId ( requestType: ServerRequestType, uniqueId: string ) -- Combines the ServerRequest and the unqiue string id 
+  createServerRequestId ( requestType: ServerRequestType, uniqueId: string ):
+    Combines the ServerRequest and the unqiue string id 
   
-  queryString( name: string, url: string = window.location.href ) -- Perform Reg Exp expression on url to combine with name and call decodeURLComponent on the result
+  queryString( name: string, url: string = window.location.href ):
+    Perform Reg Exp expression on url to combine with name and call decodeURLComponent on the result
   
 Post:
-  detectTags( content: string, character: string) => string[] = (content: string, character: string) -- Get tags from post content -- character is the tag delimiter (#)
+  detectTags( content: string, character: string) => string[] = (content: string, character: string):
+    Get tags from post content -- character is the tag delimiter (#)
   
-  getContentTags( content: string) -- Returns a list of tags without the # before the tags
+  getContentTags( content: string):
+    Returns a list of tags without the # before the tags
   
-  sortObjectDate( object: any ) -- Sort the objects by the creation data 
+  sortObjectDate( object: any ):
+    Sort the objects by the creation data 
   
-  sortImuObjectDate( objects: List<Map<string, any>>) -- Same as above sorts objects by creation date
+  sortImuObjectDate( objects: List<Map<string, any>>):
+    Same as above sorts objects by creation date
   
 File:
-  getExtention( fileName: string) -- Returns the filename extension
+  getExtention( fileName: string):
+    Returns the filename extension
   
-  convertImageToCanvas( image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap ) -- Return canvas the same dimensions of the image containing the image
+  convertImageToCanvas( image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap ):
+    Return canvas the same dimensions of the image containing the image
   
   constraintImage( file: File, fileName: string, maxWidth?: number, maxHeight?: number) -- 
