@@ -30,4 +30,10 @@ File:
   convertImageToCanvas( image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap ):
     Return canvas the same dimensions of the image containing the image
   
-  constraintImage( file: File, fileName: string, maxWidth?: number, maxHeight?: number) -- 
+  constraintImage( file: File, fileName: string, maxWidth?: number, maxHeight?: number):
+    Reads in an image from an image file and constrains it to the width and height 
+
+  dataURLtoBlob( dataURL: string) -- Converts data at URL to blob type
+  
+Common:
+  
