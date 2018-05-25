@@ -9,7 +9,8 @@ String:
   
   queryString( name: string, url: string = window.location.href ):
     Perform Reg Exp expression on url to combine with name and call decodeURLComponent on the result
-  
+
+
 Post:
   detectTags( content: string, character: string ):
     Get tags from post content -- character is the tag delimiter (#)
@@ -22,7 +23,8 @@ Post:
   
   sortImuObjectDate( objects: List<Map<string, any>> ):
     Same as above sorts objects by creation date
-  
+
+
 File:
   getExtention( fileName: string):
     Returns the filename extension
@@ -35,7 +37,8 @@ File:
 
   dataURLtoBlob( dataURL: string ):
     Converts data at URL to blob type
-  
+
+
 Common:
   logger ( title: string, ...data: any[] ):
     Logs data under title and current time
@@ -48,6 +51,9 @@ Common:
     
    getStateSlice ( state: any ):
     Converts local state to a JavaScript structure
+
+
+Comment:
    
    
   
