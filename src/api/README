@@ -44,7 +44,7 @@ Common:
     Logs data under title and current time
     
    getRandomColor ():
-     Returns a random color in hex
+    Returns a random color in hex
      
    updateObject ( oldObject: any, updatedProperties: any ):
     Updates specified object with the specified properties
@@ -54,6 +54,11 @@ Common:
 
 
 Comment:
+   createGetCommentsRequest ( postId: string ):
+    Returns the comments
+    
+   sortCommentsByDate ( sortedObjects: comments ):
+    Returns given comments sorted by date
    
    
   
